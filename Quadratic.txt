@@ -27,5 +27,19 @@ public static void Caculator (int a, int b, int c) {
             } else 
                 System.out.println("Phuong trinh bac hai co nghiem la x = " + (-c/b));
         }
+        else {
+            double x1;
+            double x2;
+            double delta = Math.pow(b, 2) - 4 * a * c;
+            if (delta < 0)
+                System.out.println("Phuong trinh vo nghiem");
+            else if (delta > 0) {
+                x1 = (-b + Math.sqrt(delta))/(2*a);
+                x2 = (-b - Math.sqrt(delta))/(2*a);
+                System.out.println("Phuong trinh co nghiem x1 = " + x1);
+                System.out.println("Phuong trinh co nghiem x1 = " + x2);
+            }
+            else System.out.println("Phuong trinh co nghiem kep x1 = x2"+ (-b/(2*a)));
+        }
       }
    }
