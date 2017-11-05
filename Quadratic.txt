@@ -1,1 +1,19 @@
 # QuadraticEquation
+import java.util.Scanner;
+import java.lang.Math;
+public static void main(String[] args) {
+        int a;
+        int b;
+        int c;
+        a = Input("Nhap he so a : ");
+        b = Input("Nhap he so a : ");
+        c = Input("Nhap he so a : ");
+        Caculator(a, b, c);       
+    }
+    public static int Input (String str) {
+        int x;
+        Scanner sc = new Scanner(System.in);
+        System.err.println(str);
+        x = sc.nextInt();
+        return x;
+    }
