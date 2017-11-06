@@ -1,7 +1,10 @@
-# QuadraticEquation
+
+package quadratic;
 import java.util.Scanner;
 import java.lang.Math;
-public static void main(String[] args) {
+public class Quadratic {
+
+    public static void main(String[] args) {
         int a;
         int b;
         int c;
@@ -17,7 +20,7 @@ public static void main(String[] args) {
         x = sc.nextInt();
         return x;
     }
-public static void Caculator (int a, int b, int c) {
+    public static void Calculator (int a, int b, int c) {
         if (a == 0) {
             if (b == 0) {
                 if (c == 0) 
@@ -41,5 +44,5 @@ public static void Caculator (int a, int b, int c) {
             }
             else System.out.println("Phuong trinh co nghiem kep x1 = x2"+ (-b/(2*a)));
         }
-      }
-   }
+    }
+}
